@@ -21,7 +21,7 @@ let LastName = " LLL";
 const Hello = (props)=>{
 
   return ( <div>
-    <h1>Hello world {Name}  {props.LastName}</h1>
+    <h1>Hello world {Name}  {props.lastName}</h1>
   </div>)
 }
 
@@ -37,7 +37,7 @@ const App = () => {
     <Hello />,
     <div>
       <h1>Heading 1</h1>
-      <Hello />
+      <Hello lastName="LLL" />
       <Operations operation="Addition" />
     </div>
   ) 
