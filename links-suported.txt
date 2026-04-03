@@ -1,8 +1,12 @@
 ##  From University
 https://studies.cs.helsinki.fi/stats/
 
+
 ## from REACT   websites
         https://es.vitejs.dev/
+        https://es.react.dev/learn/passing-props-to-a-component
+        https://react.dev/
+        https://vite.dev/
 
-
+        
 ## websites ->> tips-.
