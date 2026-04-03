@@ -18,11 +18,19 @@ const Operations = (props) => {
 
 let Name = "John Doe";
 let LastName = " LLL";
-const Hello = (props)=>{
 
+let VararraynameFriendsz = ["Friend1", "Friend2", "Friend3"];
+
+const Hello = (props)=>{
+let Showestfunct = function(){
   return ( <div>
     <h1>Hello world {Name}  {props.lastName}</h1>
+    <div> {VararraynameFriendsz.map((friend, index) => (
+      <p key={index}>{friend}</p>
+    ))}</div>
   </div>)
+}
+Showestfunct();
 }
 
 const App = () => {
@@ -40,9 +48,10 @@ const App = () => {
       <Hello lastName="LLL" />
       <Operations operation="Addition" />
     </div>
-  ) 
+  )
+
 );
 
-}
-
 export default App
+
+}
