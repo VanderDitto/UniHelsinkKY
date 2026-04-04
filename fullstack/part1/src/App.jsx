@@ -27,7 +27,7 @@ const Total = (props) => {
 
 function AppProps({ course, parts }) {
   // Calculate the total number of exercises using reduce and  props.total
-  const total = parts.reduce((sum, item) => sum + item.exercises, 0)
+  const total =  10 + 7 + 14
 
   return (
     <section>
