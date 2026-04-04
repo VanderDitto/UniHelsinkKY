@@ -16,16 +16,17 @@ const Part = ({ part, exercises }) => {
   )
 }
 
-const Total = ({ total }) => {
+const Total = (props) => {
   return (
     <>
-      <p>Number of exercises {total}</p>
+      <p>Number of exercises {props.total}</p>
       <br />
     </>
   )
 }
 
 function AppProps({ course, parts }) {
+  // Calculate the total number of exercises using reduce and  props.total
   const total = parts.reduce((sum, item) => sum + item.exercises, 0)
 
   return (
