@@ -7,23 +7,39 @@ body {
 }
 
 section {
+  display: grid;
   padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
 }
 
 h1 {
+  grid-column: 1;
   color: #fff;
   margin: 0 0 1rem 0;
   padding: 0;
   font-size: 2rem;
   font-weight: 400;
   font-family: monospace;
-  writing-mode: horizontal-tb;
+  writing-mode: vertical-rl;
   position: static;
-  display: block;
+  display: inline-flex;
+ white-space: 'pre-line';
 }
 
 p {
+  list-style: square;
+  grid-column: 2;
+  width: 100%;
+  white-space: 'pre-line';
   color: #fff;
   margin: 0 0 0.75rem 0;
   line-height: 1.5;
+  position: static;
+  left: 20px;
+  display: contents;
+  align-items: center;
+  padding: 35px;
+  margin: 35px;
 }

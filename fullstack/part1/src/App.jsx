@@ -9,23 +9,23 @@ const Header = ({ course }) => {
 
 const Part = ({ part, exercises }) => {
   return (
-    <p>{part} {exercises}</p>
+    <>
+      <p>{part} {exercises}</p>
+      <br />
+    </>
   )
 }
 
 const Total = ({ total }) => {
   return (
-    <p>Number of exercises {total}</p>
+    <>
+      <p>Number of exercises {total}</p>
+      <br />
+    </>
   )
 }
 
-function App() {
-  const course = "FullStack application development with React and Node.js"
-  const parts = [
-    { part: "Fundamentals of React", exercises: 10 },
-    { part: "Using props to pass data", exercises: 7 },
-    { part: "State of a component", exercises: 14 }
-  ]
+function AppProps({ course, parts }) {
   const total = parts.reduce((sum, item) => sum + item.exercises, 0)
 
   return (
@@ -38,4 +38,5 @@ function App() {
     </section>
   )
 }
-export default App
+
+export default AppProps
