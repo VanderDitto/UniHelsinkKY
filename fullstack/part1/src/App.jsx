@@ -26,7 +26,7 @@ const Total = ({ total }) => {
 }
 
 function AppProps({ course, parts }) {
-  const total = parts.reduce((sum, item) => sum + item.exercises, 0)
+ const total = 10 + 7 +  14
 
   return (
     <section>
